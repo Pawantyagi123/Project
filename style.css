@@ -1,0 +1,162 @@
+html {
+    font-size: 62.5%;
+    font-family: "Work Sans", sans-serif;
+}
+/*Reiniciando los estios del navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/*Variables*/
+:root {
+    /*Colours*/
+    --White: hsl(0, 0%, 100%);
+    --LightPink: hsl(275, 100%, 97%);
+    --GrayishPurple: hsl(292, 16%, 49%);
+    --DarkPurple: hsl(292, 42%, 14%);
+    /*Tipography*/
+    --RegularSize: 16px;
+}
+
+body {
+    background-color: var(--LightPink);
+}
+/*El position relative es para poder acomodar la tarjeta con position absolute y que tome como referencia a este contenedor*/
+#main-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+/*La imagen de fondo mide todo el contenedor principal*/
+.main-container--background-img {
+    width: 100%;
+}
+
+.main-container--background-desktop {
+    display: none;
+}
+
+.card-container {
+    width: 85%;
+    max-width: 500px;
+    position: absolute;
+    top: 30%;
+    background-color: var(--White);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.2);;
+}
+
+.card-container--title {
+    display: flex;
+    align-items: center;
+}
+
+.title--icon-star {
+    width: 25px;
+}
+
+/*Todos los iconos con los que se puede interactuar (no se puede interactuar con el de la estrella*/
+.interactive-icons {
+    width: 25px;
+    height: 25px;
+    padding: 12px;
+    margin-left: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.plus-icon {
+    background-image: url(/assets/images/icon-plus.svg);
+}
+
+.minus-icon {
+    background-image: url(/assets/images/icon-minus.svg);
+}
+
+.card-container--title h1 {
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--DarkPurple);
+}
+
+.card-container--accordion {
+    margin-top: 15px;
+}
+
+.item--default-container {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.item--question {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--DarkPurple);
+}
+
+.item--question:hover {
+    color: rgb(173, 40, 235);
+}
+
+.item-paragraph-drop-inactive {
+    display: none;
+}
+
+.item--paragraph-drop-active {
+    display: block;
+}
+
+.item--paragraph-drop {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--GrayishPurple);
+    line-height: 1.5;
+}
+
+.questions--item2,
+.questions--item3,
+.questions--item4 {
+    margin-top: 20px;
+}
+
+.span-sepation {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 18px;
+    background: var(--LightPink);
+}
+
+@media (min-width: 540px) {
+
+    .card-container{
+        padding: 25px;
+    }
+
+    .main-container--background-img {
+        display: none;
+    }
+
+    .main-container--background-desktop{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card-container{
+        top: 50%;
+    }
+
+    .card-container--title h1{
+        font-size: 30px;
+    }
+}

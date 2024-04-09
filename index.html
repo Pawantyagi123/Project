@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@500&family=Open+Sans&family=Outfit&family=Poppins:ital,wght@0,700;1,400;1,800&family=Quicksand:wght@300;500;700&family=Roboto&family=Roboto+Condensed&family=Teko&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section id="main-container">
+    <img src="assets/images/background-pattern-mobile.svg" alt="background-image" class="main-container--background-img">
+    <img src="assets/images/background-pattern-desktop.svg" alt="background-image-desktop" class="main-container--background-desktop">
+    <div class="card-container">
+        <div class="card-container--title">
+            <img src="/assets/images/icon-star.svg" alt="icon-star" class="title--icon-star">
+            <h1>FAQs</h1>
+        </div>
+        
+        <div class="card-container--accordion">
+            <ul class="accordion--questions">
+                <li class="questions--item1">
+                    <div class="item--default-container">
+                        <p class="item--question">What is Frontend Mentor, and how will it help me?</p>
+                        <span class="interactive-icons plus-icon">
+                        
+                          </span>
+                    </div>
+                    <p class="item--paragraph-drop item-paragraph-drop-inactive">Frontend Mentor offers realistic coding challenges to help developers improve their 
+                      frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+                      all levels and ideal for portfolio building.</p>
+                </li>
+
+                <span class="span-sepation"></span>
+
+                <li class="questions--item2">
+                    <div class="item--default-container">
+                        <p class="item--question">Is Frontend Mentor free?</p>
+                        <span class="interactive-icons plus-icon">
+                          
+                          </span>
+                    </div>
+                    <p class="item--paragraph-drop item-paragraph-drop-inactive">Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+                      option providing access to a range of projects suitable for all skill levels.</p>
+                </li>
+
+                <span class="span-sepation"></span>
+
+                <li class="questions--item3">
+                    <div class="item--default-container">
+                        <p class="item--question">Can i use Frontend Mentor projects in my portfolio?</p>
+                        <span class="interactive-icons plus-icon">
+                          
+                          </span>
+                    </div>
+                    <p class="item--paragraph-drop item-paragraph-drop-inactive">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+                      way to showcase your skills to potential employers!</p>
+                </li>
+                
+                <span class="span-sepation"></span>
+
+                <li class="questions--item4">
+                    <div class="item--default-container">
+                        <p class="item--question">How can i get help if i’m stuck on a challenge</p>
+                        <span class="interactive-icons plus-icon">
+                          
+                          </span>
+                    </div>
+                    <p class="item--paragraph-drop item-paragraph-drop-inactive">The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+  channel where you can ask questions and seek support from other community members.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pawan</a>.
+  </div>
+ <script src="script.js"></script>
+</body>
+</html>
